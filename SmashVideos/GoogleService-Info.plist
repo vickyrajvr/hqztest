@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>504817722238-ake9cvrnlq7fknr9ruln06n6n6tvkfct.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.504817722238-ake9cvrnlq7fknr9ruln06n6n6tvkfct</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>504817722238-s39t4k8gtv9tvh0vs39hcnbio7tch6p8.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBKx0FfGNNhih9pDYTsFlClxI-IuwJSWAw</string>
+	<key>GCM_SENDER_ID</key>
+	<string>504817722238</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.hqz.app-ios</string>
+	<key>PROJECT_ID</key>
+	<string>hqz-login</string>
+	<key>STORAGE_BUCKET</key>
+	<string>hqz-login.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:504817722238:ios:1bf9823cacd200e20f492f</string>
+	<key>DATABASE_URL</key>
+	<string>https://hqz-login-default-rtdb.asia-southeast1.firebasedatabase.app</string>
+</dict>
+</plist>

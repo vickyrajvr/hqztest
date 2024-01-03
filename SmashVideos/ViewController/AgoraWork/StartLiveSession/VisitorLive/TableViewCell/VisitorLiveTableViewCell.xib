@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="VisitorLiveTableViewCell" id="KGk-i7-Jjw" customClass="VisitorLiveTableViewCell" customModule="SmashVideos" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noUserImg" translatesAutoresizingMaskIntoConstraints="NO" id="qof-st-uzy" customClass="CustomImageView" customModule="SmashVideos" customModuleProvider="target">
+                        <rect key="frame" x="15" y="10" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="4et-J4-q4L"/>
+                            <constraint firstAttribute="width" constant="40" id="vGS-zX-KXz"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornarRadius">
+                                <real key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xcz-6v-Lde">
+                        <rect key="frame" x="63" y="14.666666666666664" width="242" height="17"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="test" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9b1-Nn-0TE">
+                        <rect key="frame" x="63" y="31.666666666666671" width="242" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" systemColor="systemGray2Color"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="xcz-6v-Lde" firstAttribute="centerY" secondItem="qof-st-uzy" secondAttribute="centerY" constant="-6.8333333333333357" id="3ke-ci-rRk"/>
+                    <constraint firstItem="9b1-Nn-0TE" firstAttribute="top" secondItem="xcz-6v-Lde" secondAttribute="bottom" id="Fer-Jf-lai"/>
+                    <constraint firstItem="qof-st-uzy" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="byn-2W-XB7"/>
+                    <constraint firstItem="9b1-Nn-0TE" firstAttribute="trailing" secondItem="xcz-6v-Lde" secondAttribute="trailing" id="etL-Lc-Fji"/>
+                    <constraint firstAttribute="trailing" secondItem="xcz-6v-Lde" secondAttribute="trailing" constant="15" id="fKh-Y9-xLb"/>
+                    <constraint firstItem="9b1-Nn-0TE" firstAttribute="leading" secondItem="xcz-6v-Lde" secondAttribute="leading" id="g8M-dZ-v3D"/>
+                    <constraint firstItem="qof-st-uzy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="yoU-kz-5Wc"/>
+                    <constraint firstItem="xcz-6v-Lde" firstAttribute="leading" secondItem="qof-st-uzy" secondAttribute="trailing" constant="8" symbolic="YES" id="z8h-9A-gyn"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imgProfile" destination="qof-st-uzy" id="fa5-Pj-9iz"/>
+                <outlet property="lblUsername" destination="xcz-6v-Lde" id="Nsi-km-9VQ"/>
+                <outlet property="lblVisitor" destination="9b1-Nn-0TE" id="R09-fK-73q"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="20"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="noUserImg" width="163.33332824707031" height="163"/>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

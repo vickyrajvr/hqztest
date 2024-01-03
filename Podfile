@@ -53,6 +53,10 @@ pod 'iOSDropDown'
 pod 'RealmSwift'
 pod 'RangeSeekSlider'
 pod 'Keyboard+LayoutGuide'
+pod 'TOCropViewController'
+pod 'VideoEditorSDK'
+
+
 
 end
 post_install do |installer|

@@ -1,0 +1,11 @@
+framework module ImglyKit {
+  umbrella header "ImglyKit.h"
+
+  export *
+  module * { export * }
+}
+
+module ImglyKit.Swift {
+  header "ImglyKit-Swift.h"
+  requires objc
+}

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UploadViewController" customModule="SmashVideos" customModuleProvider="target">
+            <connections>
+                <outlet property="lblUpload" destination="xQo-ZA-4gE" id="ZLB-Dv-2wl"/>
+                <outlet property="progressBar" destination="c18-wY-xbL" id="q0o-53-Eyp"/>
+                <outlet property="view" destination="5NU-B5-fzV" id="IFv-Fb-OSz"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="5NU-B5-fzV">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aI9-rt-KtG">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LEI-KD-BQG">
+                    <rect key="frame" x="30" y="318" width="354" height="100"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upload" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xQo-ZA-4gE">
+                            <rect key="frame" x="150" y="30" width="54" height="20.333333333333329"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                            <color key="textColor" name="black"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="c18-wY-xbL">
+                            <rect key="frame" x="15" y="65.666666666666686" width="324" height="8"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="8" id="737-Xm-8D0"/>
+                            </constraints>
+                            <color key="progressTintColor" name="theme"/>
+                            <color key="trackTintColor" name="white"/>
+                        </progressView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="c18-wY-xbL" firstAttribute="top" secondItem="xQo-ZA-4gE" secondAttribute="bottom" constant="15.333333333333343" id="Fu1-E8-Va1"/>
+                        <constraint firstItem="xQo-ZA-4gE" firstAttribute="centerX" secondItem="LEI-KD-BQG" secondAttribute="centerX" id="Fu4-f6-DSf"/>
+                        <constraint firstAttribute="trailing" secondItem="c18-wY-xbL" secondAttribute="trailing" constant="15" id="NPQ-Oq-9iO"/>
+                        <constraint firstItem="c18-wY-xbL" firstAttribute="leading" secondItem="LEI-KD-BQG" secondAttribute="leading" constant="15" id="jtQ-hO-ahA"/>
+                        <constraint firstItem="xQo-ZA-4gE" firstAttribute="centerY" secondItem="LEI-KD-BQG" secondAttribute="centerY" constant="-10.000000000000014" id="mrg-ja-IxX"/>
+                        <constraint firstAttribute="height" constant="100" id="o47-wo-357"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="PRj-Iv-Gh2"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="aI9-rt-KtG" secondAttribute="bottom" id="CLG-Za-EQR"/>
+                <constraint firstItem="LEI-KD-BQG" firstAttribute="centerY" secondItem="PRj-Iv-Gh2" secondAttribute="centerY" id="Ics-16-ZXW"/>
+                <constraint firstItem="LEI-KD-BQG" firstAttribute="centerX" secondItem="PRj-Iv-Gh2" secondAttribute="centerX" id="PX1-gL-wLT"/>
+                <constraint firstItem="PRj-Iv-Gh2" firstAttribute="trailing" secondItem="LEI-KD-BQG" secondAttribute="trailing" constant="30" id="Pte-LE-jcm"/>
+                <constraint firstItem="aI9-rt-KtG" firstAttribute="leading" secondItem="PRj-Iv-Gh2" secondAttribute="leading" id="WY9-Jf-yze"/>
+                <constraint firstItem="aI9-rt-KtG" firstAttribute="top" secondItem="5NU-B5-fzV" secondAttribute="top" id="YMI-3C-yrS"/>
+                <constraint firstItem="LEI-KD-BQG" firstAttribute="leading" secondItem="PRj-Iv-Gh2" secondAttribute="leading" constant="30" id="tCL-Kp-pUV"/>
+                <constraint firstItem="PRj-Iv-Gh2" firstAttribute="trailing" secondItem="aI9-rt-KtG" secondAttribute="trailing" id="vhZ-e4-as0"/>
+            </constraints>
+            <point key="canvasLocation" x="283" y="140"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="black">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="theme">
+            <color red="0.9570000171661377" green="0.54900002479553223" blue="0.019999999552965164" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="white">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WelcomeSpacesViewController" customModule="SmashVideos" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QV5-Uw-VHA" customClass="CustomView" customModule="SmashVideos" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="203.66666666666669" width="414" height="532.33333333333326"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Spaces" translatesAutoresizingMaskIntoConstraints="NO" id="gJW-yF-kJe">
+                            <rect key="frame" x="182" y="31" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="gYI-qP-kMy"/>
+                                <constraint firstAttribute="height" constant="50" id="ucH-qz-7Ok"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to MusicTok Spaces" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yuA-fS-cPA">
+                            <rect key="frame" x="15" y="111.00000000000003" width="384" height="26.333333333333343"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Where live audio conversations happen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zXG-vC-vMQ">
+                            <rect key="frame" x="15" y="145.33333333333334" width="384" height="15.666666666666657"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" name="darkGrey"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="rKz-9w-DZW">
+                            <rect key="frame" x="0.0" y="181.66666666666663" width="414" height="205.33333333333337"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="205.33000000000001" id="GTh-Pt-YZF"/>
+                            </constraints>
+                        </tableView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MusicTok always keeps copies of Spaces for a limited time to review for spam and abuse" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8xU-XF-jYM">
+                            <rect key="frame" x="15" y="407" width="384" height="31.333333333333314"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" name="darkGrey"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yhw-H0-hZg">
+                            <rect key="frame" x="15" y="452.33333333333337" width="384" height="50"/>
+                            <color key="backgroundColor" red="0.71372549019999998" green="0.20392156859999999" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="20i-Pp-FrX"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Got it">
+                                <color key="titleColor" name="white"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="25"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="rKz-9w-DZW" firstAttribute="leading" secondItem="QV5-Uw-VHA" secondAttribute="leading" id="1WN-Vc-XQn"/>
+                        <constraint firstItem="8xU-XF-jYM" firstAttribute="top" secondItem="rKz-9w-DZW" secondAttribute="bottom" constant="20" id="8Fv-J4-esa"/>
+                        <constraint firstItem="Yhw-H0-hZg" firstAttribute="leading" secondItem="QV5-Uw-VHA" secondAttribute="leading" constant="15" id="94Q-go-cuR"/>
+                        <constraint firstItem="yuA-fS-cPA" firstAttribute="centerX" secondItem="gJW-yF-kJe" secondAttribute="centerX" id="9qg-8v-bMl"/>
+                        <constraint firstAttribute="trailing" secondItem="yuA-fS-cPA" secondAttribute="trailing" constant="15" id="A5P-U3-ZEr"/>
+                        <constraint firstItem="zXG-vC-vMQ" firstAttribute="top" secondItem="yuA-fS-cPA" secondAttribute="bottom" constant="8" symbolic="YES" id="BMq-OV-LgA"/>
+                        <constraint firstAttribute="trailing" secondItem="rKz-9w-DZW" secondAttribute="trailing" id="MEZ-Q5-tXd"/>
+                        <constraint firstAttribute="bottom" secondItem="Yhw-H0-hZg" secondAttribute="bottom" constant="30" id="Nqy-lR-mia"/>
+                        <constraint firstItem="zXG-vC-vMQ" firstAttribute="trailing" secondItem="yuA-fS-cPA" secondAttribute="trailing" id="Nsz-kC-m4V"/>
+                        <constraint firstItem="rKz-9w-DZW" firstAttribute="top" secondItem="zXG-vC-vMQ" secondAttribute="bottom" constant="20.666666666666686" id="OVz-Wu-76f"/>
+                        <constraint firstItem="8xU-XF-jYM" firstAttribute="leading" secondItem="QV5-Uw-VHA" secondAttribute="leading" constant="15" id="SEP-Xh-Bgy"/>
+                        <constraint firstItem="yuA-fS-cPA" firstAttribute="top" secondItem="gJW-yF-kJe" secondAttribute="bottom" constant="30" id="Xc2-YU-Hff"/>
+                        <constraint firstAttribute="trailing" secondItem="Yhw-H0-hZg" secondAttribute="trailing" constant="15" id="Y8L-7F-Xkh"/>
+                        <constraint firstItem="Yhw-H0-hZg" firstAttribute="top" secondItem="8xU-XF-jYM" secondAttribute="bottom" constant="14" id="Zgb-WB-pzR"/>
+                        <constraint firstItem="zXG-vC-vMQ" firstAttribute="centerX" secondItem="yuA-fS-cPA" secondAttribute="centerX" id="aWY-qY-YYi"/>
+                        <constraint firstItem="gJW-yF-kJe" firstAttribute="centerX" secondItem="QV5-Uw-VHA" secondAttribute="centerX" id="gE8-iK-cfe"/>
+                        <constraint firstItem="gJW-yF-kJe" firstAttribute="top" secondItem="QV5-Uw-VHA" secondAttribute="top" constant="31" id="h5S-N9-rye"/>
+                        <constraint firstAttribute="trailing" secondItem="8xU-XF-jYM" secondAttribute="trailing" constant="15" id="j2q-sy-bIp"/>
+                        <constraint firstItem="zXG-vC-vMQ" firstAttribute="leading" secondItem="yuA-fS-cPA" secondAttribute="leading" id="ouo-gH-zAM"/>
+                        <constraint firstItem="rKz-9w-DZW" firstAttribute="centerX" secondItem="zXG-vC-vMQ" secondAttribute="centerX" id="y9u-co-zSG"/>
+                        <constraint firstItem="yuA-fS-cPA" firstAttribute="leading" secondItem="QV5-Uw-VHA" secondAttribute="leading" constant="15" id="zbu-Fn-e3S"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                            <color key="value" name="darkGrey"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                            <real key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="QV5-Uw-VHA" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="3Gx-uB-29I"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="QV5-Uw-VHA" secondAttribute="trailing" id="PM9-hq-oqi"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="QV5-Uw-VHA" secondAttribute="bottom" id="k2I-qK-EqW"/>
+                <constraint firstAttribute="bottom" secondItem="QV5-Uw-VHA" secondAttribute="bottom" id="qL3-oW-2cu"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="19.565217391304348"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Spaces" width="76" height="76"/>
+        <namedColor name="darkGrey">
+            <color red="0.54500001668930054" green="0.53700000047683716" blue="0.56099998950958252" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="white">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

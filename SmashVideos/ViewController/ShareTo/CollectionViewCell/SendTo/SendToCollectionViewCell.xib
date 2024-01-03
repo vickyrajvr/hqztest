@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SendToCollectionViewCell" id="gTV-IL-0wX" customClass="SendToCollectionViewCell" customModule="SmashVideos" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pzk-qW-yt0">
+                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noUserImg" translatesAutoresizingMaskIntoConstraints="NO" id="9nY-F8-AM3" customClass="CustomImageView" customModule="SmashVideos" customModuleProvider="target">
+                                <rect key="frame" x="20" y="9" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="47t-LT-LZP"/>
+                                    <constraint firstAttribute="height" constant="40" id="VsT-iN-Kep"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isCircle" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornarRadius">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="bivyadad" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KSv-Xr-nv6">
+                                <rect key="frame" x="0.0" y="57" width="80" height="13.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" name="darkGrey"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="KSv-Xr-nv6" secondAttribute="trailing" id="Fm5-Vi-nZg"/>
+                            <constraint firstItem="KSv-Xr-nv6" firstAttribute="top" secondItem="9nY-F8-AM3" secondAttribute="bottom" constant="8" symbolic="YES" id="QGY-dF-hRc"/>
+                            <constraint firstItem="9nY-F8-AM3" firstAttribute="centerX" secondItem="pzk-qW-yt0" secondAttribute="centerX" id="ZSV-6h-ZAi"/>
+                            <constraint firstItem="KSv-Xr-nv6" firstAttribute="leading" secondItem="pzk-qW-yt0" secondAttribute="leading" id="rQJ-OD-VFr"/>
+                            <constraint firstItem="9nY-F8-AM3" firstAttribute="centerY" secondItem="pzk-qW-yt0" secondAttribute="centerY" constant="-11" id="x8y-mY-sdS"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="pzk-qW-yt0" secondAttribute="bottom" id="KNs-Q1-Q66"/>
+                <constraint firstAttribute="trailing" secondItem="pzk-qW-yt0" secondAttribute="trailing" id="a6j-Ue-Kyh"/>
+                <constraint firstItem="pzk-qW-yt0" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="pOd-jT-1so"/>
+                <constraint firstItem="pzk-qW-yt0" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="uIh-Tv-LFM"/>
+            </constraints>
+            <size key="customSize" width="138" height="146"/>
+            <connections>
+                <outlet property="imgProfile" destination="9nY-F8-AM3" id="yKO-GA-fka"/>
+                <outlet property="lblProfile" destination="KSv-Xr-nv6" id="eax-eJ-bch"/>
+            </connections>
+            <point key="canvasLocation" x="200.00000000000003" y="140.625"/>
+        </collectionViewCell>
+    </objects>
+    <designables>
+        <designable name="9nY-F8-AM3">
+            <size key="intrinsicContentSize" width="163.33333333333334" height="163"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="noUserImg" width="163.33332824707031" height="163"/>
+        <namedColor name="darkGrey">
+            <color red="0.54500001668930054" green="0.53799998760223389" blue="0.56199997663497925" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

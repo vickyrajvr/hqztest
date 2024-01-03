@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="VideosCollectionViewCell" id="xoa-Yg-BeW" customClass="VideosCollectionViewCell" customModule="SmashVideos" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="159" height="167"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Ifs-C9-TZE">
+                <rect key="frame" x="0.0" y="0.0" width="159" height="167"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Jw2-D5-mZ5">
+                        <rect key="frame" x="0.0" y="0.0" width="159" height="167"/>
+                    </imageView>
+                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_eye_white" translatesAutoresizingMaskIntoConstraints="NO" id="Quh-yR-VrE">
+                        <rect key="frame" x="10" y="142" width="15" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="15" id="Epv-Q6-HEg"/>
+                            <constraint firstAttribute="height" constant="15" id="fRY-ap-Gyy"/>
+                        </constraints>
+                    </imageView>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xGo-6U-o1s">
+                        <rect key="frame" x="28" y="142.5" width="31" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="Uf0-rk-fFE">
+                        <rect key="frame" x="5" y="134" width="9.5" height="25"/>
+                        <subviews>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_view_transparent" translatesAutoresizingMaskIntoConstraints="NO" id="IqB-TF-xEq">
+                                <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="IPe-tv-PaW"/>
+                                    <constraint firstAttribute="width" constant="25" id="tw6-Vo-2mZ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XcI-9F-jxQ">
+                                <rect key="frame" x="0.0" y="0.0" width="9.5" height="25"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <color key="textColor" name="white"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="XcI-9F-jxQ" firstAttribute="centerY" secondItem="IqB-TF-xEq" secondAttribute="centerY" id="ie8-2q-cbf"/>
+                            <constraint firstAttribute="height" constant="25" id="nw0-vZ-7XY"/>
+                        </constraints>
+                    </stackView>
+                    <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="oYY-RU-D6G">
+                        <rect key="frame" x="144.5" y="134" width="9.5" height="25"/>
+                        <subviews>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heartAniIcon" translatesAutoresizingMaskIntoConstraints="NO" id="e3m-Zw-cmx">
+                                <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="25" id="SW4-vS-hnP"/>
+                                    <constraint firstAttribute="height" constant="25" id="eUj-pB-lna"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c7O-Na-a4H">
+                                <rect key="frame" x="0.0" y="0.0" width="9.5" height="25"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <color key="textColor" name="white"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="ezh-ot-Omq"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="oYY-RU-D6G" secondAttribute="bottom" constant="8" id="7c0-px-gwN"/>
+                    <constraint firstItem="Jw2-D5-mZ5" firstAttribute="leading" secondItem="Ifs-C9-TZE" secondAttribute="leading" id="Cly-ij-zhC"/>
+                    <constraint firstAttribute="bottom" secondItem="Jw2-D5-mZ5" secondAttribute="bottom" id="Csc-ps-EgI"/>
+                    <constraint firstAttribute="bottom" secondItem="Quh-yR-VrE" secondAttribute="bottom" constant="10" id="QyR-zk-diX"/>
+                    <constraint firstItem="Uf0-rk-fFE" firstAttribute="leading" secondItem="Ifs-C9-TZE" secondAttribute="leading" constant="5" id="Vtx-x0-5Xm"/>
+                    <constraint firstItem="xGo-6U-o1s" firstAttribute="leading" secondItem="Quh-yR-VrE" secondAttribute="trailing" constant="3" id="dbz-cw-iMj"/>
+                    <constraint firstItem="Quh-yR-VrE" firstAttribute="leading" secondItem="Ifs-C9-TZE" secondAttribute="leading" constant="10" id="gdN-iC-LWB"/>
+                    <constraint firstAttribute="trailing" secondItem="Jw2-D5-mZ5" secondAttribute="trailing" id="pvd-g6-TqD"/>
+                    <constraint firstItem="Jw2-D5-mZ5" firstAttribute="top" secondItem="Ifs-C9-TZE" secondAttribute="top" id="q1q-rf-v8e"/>
+                    <constraint firstAttribute="trailing" secondItem="oYY-RU-D6G" secondAttribute="trailing" constant="5" id="rTm-x4-lgu"/>
+                    <constraint firstItem="xGo-6U-o1s" firstAttribute="centerY" secondItem="Quh-yR-VrE" secondAttribute="centerY" id="wfd-Rr-HPN"/>
+                    <constraint firstAttribute="bottom" secondItem="Uf0-rk-fFE" secondAttribute="bottom" constant="8" id="ytD-yD-SQ1"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="159" height="167"/>
+            <connections>
+                <outlet property="lblHeartCount" destination="c7O-Na-a4H" id="NI2-zE-kuZ"/>
+                <outlet property="vidImg" destination="Jw2-D5-mZ5" id="A0N-Sf-mAm"/>
+                <outlet property="videoCount" destination="XcI-9F-jxQ" id="Nek-5w-dg5"/>
+            </connections>
+            <point key="canvasLocation" x="133" y="-22"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="heartAniIcon" width="64" height="64"/>
+        <image name="ic_eye_white" width="21.333333969116211" height="21.333333969116211"/>
+        <image name="ic_view_transparent" width="50" height="50"/>
+        <namedColor name="white">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

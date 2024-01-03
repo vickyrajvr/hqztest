@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ProfileViewsTableViewCell" rowHeight="100" id="KGk-i7-Jjw" customClass="ProfileViewsTableViewCell" customModule="SmashVideos" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="395" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="395" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0cL-wP-pot" userLabel="cellView">
+                        <rect key="frame" x="0.0" y="0.0" width="395" height="80"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noUserImg" translatesAutoresizingMaskIntoConstraints="NO" id="Jn4-to-4te" customClass="CustomImageView" customModule="SmashVideos" customModuleProvider="target">
+                                <rect key="frame" x="10" y="10" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="l0z-7N-RXP"/>
+                                    <constraint firstAttribute="height" constant="60" id="p5e-fb-a6d"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="m6u-pX-WAx">
+                                <rect key="frame" x="280" y="25" width="100" height="30"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="vVG-kh-dvj">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CHF-sT-6So">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="30"/>
+                                                <color key="backgroundColor" name="theme"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="j8Q-Mr-wPK"/>
+                                                    <constraint firstAttribute="width" constant="100" id="zTf-mA-W7v"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                                                <state key="normal" title="Following">
+                                                    <color key="titleColor" name="white"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <integer key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="user_name1234" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tay-C2-0Ng">
+                                <rect key="frame" x="80" y="31" width="110" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" name="black"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="tay-C2-0Ng" firstAttribute="leading" secondItem="Jn4-to-4te" secondAttribute="trailing" constant="10" id="1fD-7J-pTx"/>
+                            <constraint firstAttribute="bottom" secondItem="Jn4-to-4te" secondAttribute="bottom" constant="10" id="MdN-Rt-NAG"/>
+                            <constraint firstItem="Jn4-to-4te" firstAttribute="centerY" secondItem="0cL-wP-pot" secondAttribute="centerY" id="OEI-a0-2Tp"/>
+                            <constraint firstItem="tay-C2-0Ng" firstAttribute="centerY" secondItem="Jn4-to-4te" secondAttribute="centerY" id="fUw-my-eM3"/>
+                            <constraint firstItem="m6u-pX-WAx" firstAttribute="centerY" secondItem="0cL-wP-pot" secondAttribute="centerY" id="kcs-ws-hPg"/>
+                            <constraint firstItem="Jn4-to-4te" firstAttribute="leading" secondItem="0cL-wP-pot" secondAttribute="leading" constant="10" id="rdm-d2-jXd"/>
+                            <constraint firstItem="Jn4-to-4te" firstAttribute="top" secondItem="0cL-wP-pot" secondAttribute="top" constant="10" id="sQS-kp-YNk"/>
+                            <constraint firstAttribute="trailing" secondItem="m6u-pX-WAx" secondAttribute="trailing" constant="15" id="ybu-l9-sSO"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="0cL-wP-pot" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="EgW-Kp-3dr"/>
+                    <constraint firstItem="0cL-wP-pot" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Lxz-wX-xUY"/>
+                    <constraint firstAttribute="bottom" secondItem="0cL-wP-pot" secondAttribute="bottom" id="Mww-NR-I9E"/>
+                    <constraint firstAttribute="trailing" secondItem="0cL-wP-pot" secondAttribute="trailing" id="ZHS-t0-aTi"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btnFollow" destination="CHF-sT-6So" id="GuS-Sr-3YE"/>
+                <outlet property="imgProfile" destination="Jn4-to-4te" id="v7h-Td-Oqx"/>
+                <outlet property="lblProfileUsername" destination="tay-C2-0Ng" id="T5K-IH-jpA"/>
+            </connections>
+            <point key="canvasLocation" x="182.44274809160305" y="48.943661971830991"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="Jn4-to-4te">
+            <size key="intrinsicContentSize" width="163.33333333333334" height="163"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="noUserImg" width="163.33332824707031" height="163"/>
+        <namedColor name="black">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="theme">
+            <color red="0.9570000171661377" green="0.54900002479553223" blue="0.019999999552965164" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="white">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

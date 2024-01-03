@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="StartCancelCollectionViewCell" id="gTV-IL-0wX" customClass="StartCancelCollectionViewCell" customModule="SmashVideos" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p8W-pe-XqX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ISZ-w9-Xxw">
+                                <rect key="frame" x="359" y="65" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="LJT-XR-q2o"/>
+                                    <constraint firstAttribute="height" constant="40" id="es7-y7-37G"/>
+                                </constraints>
+                                <color key="tintColor" name="white"/>
+                                <inset key="imageEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                <state key="normal" image="cross2"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ISZ-w9-Xxw" firstAttribute="top" secondItem="p8W-pe-XqX" secondAttribute="top" constant="65" id="5fd-y9-qO4"/>
+                            <constraint firstAttribute="trailing" secondItem="ISZ-w9-Xxw" secondAttribute="trailing" constant="15" id="hBR-T5-q3D"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="p8W-pe-XqX" secondAttribute="trailing" id="Zut-5D-92h"/>
+                <constraint firstItem="p8W-pe-XqX" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="aaS-tt-rKM"/>
+                <constraint firstItem="p8W-pe-XqX" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="hUh-RE-dnM"/>
+                <constraint firstAttribute="bottom" secondItem="p8W-pe-XqX" secondAttribute="bottom" id="mzJ-kl-lZ9"/>
+            </constraints>
+            <connections>
+                <outlet property="btnCancel" destination="ISZ-w9-Xxw" id="bGQ-Od-yFf"/>
+            </connections>
+            <point key="canvasLocation" x="83.969465648854964" y="19.718309859154932"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="cross2" width="21.5" height="21.5"/>
+        <namedColor name="white">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

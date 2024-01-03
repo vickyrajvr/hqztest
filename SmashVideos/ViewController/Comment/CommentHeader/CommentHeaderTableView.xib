@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CommentHeaderTableView" customModule="SmashVideos" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="458" height="189"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comments here" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uEn-Hm-TDB">
+                    <rect key="frame" x="69" y="66" width="341" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" name="black"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noUserImg" translatesAutoresizingMaskIntoConstraints="NO" id="Iv1-c3-eYh" customClass="CustomImageView" customModule="SmashVideos" customModuleProvider="target">
+                    <rect key="frame" x="15" y="48" width="40" height="40"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Baa-Mq-ZgT"/>
+                        <constraint firstAttribute="width" constant="40" id="Qeb-Ah-jF0"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornarRadius">
+                            <real key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isCircle" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 days ago" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hvB-HF-MG1">
+                    <rect key="frame" x="69" y="86" width="62" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="15" id="IdU-gc-4Sg"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" name="darkGrey"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vEn-CK-ccx">
+                    <rect key="frame" x="140" y="80" width="32" height="27"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="27" id="jFQ-L6-1Ig"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="Reply">
+                        <color key="titleColor" name="darkGrey"/>
+                    </state>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20.1K" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jGf-qU-XFI">
+                    <rect key="frame" x="417.5" y="86.5" width="31" height="15"/>
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="12"/>
+                    <color key="textColor" name="darkGrey"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fJx-i8-YQf">
+                    <rect key="frame" x="79" y="109" width="75" height="27"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="View all reply">
+                        <color key="titleColor" name="darkGrey"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9N6-Nb-h8s">
+                    <rect key="frame" x="423" y="58" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="dkr-AO-9KZ"/>
+                        <constraint firstAttribute="height" constant="20" id="zDv-W4-hU1"/>
+                    </constraints>
+                    <state key="normal" image="ic_heart_gray_out"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fvO-yp-MpX">
+                    <rect key="frame" x="69" y="48" width="35.5" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" name="black"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" name="lightgraycolor"/>
+            <constraints>
+                <constraint firstItem="Iv1-c3-eYh" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="3vf-ns-kjG"/>
+                <constraint firstItem="9N6-Nb-h8s" firstAttribute="leading" secondItem="uEn-Hm-TDB" secondAttribute="trailing" constant="13" id="4Au-uM-bXF"/>
+                <constraint firstItem="jGf-qU-XFI" firstAttribute="top" secondItem="9N6-Nb-h8s" secondAttribute="bottom" constant="8.5" id="6HQ-3e-Z6J"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="9N6-Nb-h8s" secondAttribute="trailing" constant="15" id="7Nv-kW-psy"/>
+                <constraint firstItem="vEn-CK-ccx" firstAttribute="leading" secondItem="hvB-HF-MG1" secondAttribute="trailing" constant="9" id="8oZ-sg-FBt"/>
+                <constraint firstItem="fvO-yp-MpX" firstAttribute="leading" secondItem="Iv1-c3-eYh" secondAttribute="trailing" constant="14" id="DVN-ni-O9l"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="top" secondItem="Iv1-c3-eYh" secondAttribute="top" constant="-4" id="F4v-Pu-PwD"/>
+                <constraint firstItem="jGf-qU-XFI" firstAttribute="centerX" secondItem="9N6-Nb-h8s" secondAttribute="centerX" id="IJE-p8-lyw"/>
+                <constraint firstItem="uEn-Hm-TDB" firstAttribute="top" secondItem="fvO-yp-MpX" secondAttribute="bottom" constant="1" id="M0a-U2-zzB"/>
+                <constraint firstItem="fvO-yp-MpX" firstAttribute="top" secondItem="Iv1-c3-eYh" secondAttribute="top" id="ObZ-jD-jnP"/>
+                <constraint firstItem="fJx-i8-YQf" firstAttribute="leading" secondItem="uEn-Hm-TDB" secondAttribute="leading" constant="10" id="OuD-tK-wey"/>
+                <constraint firstItem="hvB-HF-MG1" firstAttribute="top" secondItem="uEn-Hm-TDB" secondAttribute="bottom" constant="3" id="PAN-U4-zkd"/>
+                <constraint firstItem="vEn-CK-ccx" firstAttribute="centerY" secondItem="hvB-HF-MG1" secondAttribute="centerY" id="c6m-kr-Cnv"/>
+                <constraint firstItem="fJx-i8-YQf" firstAttribute="top" secondItem="hvB-HF-MG1" secondAttribute="bottom" constant="8" symbolic="YES" id="fEe-vT-elk"/>
+                <constraint firstItem="hvB-HF-MG1" firstAttribute="leading" secondItem="Iv1-c3-eYh" secondAttribute="trailing" constant="14" id="fgT-Z6-nD2"/>
+                <constraint firstItem="uEn-Hm-TDB" firstAttribute="leading" secondItem="Iv1-c3-eYh" secondAttribute="trailing" constant="14" id="ktV-QA-rkg"/>
+                <constraint firstItem="9N6-Nb-h8s" firstAttribute="centerY" secondItem="Iv1-c3-eYh" secondAttribute="centerY" id="mTA-73-JQR"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btnLike" destination="9N6-Nb-h8s" id="Tkc-Ze-5Qg"/>
+                <outlet property="btnReply" destination="vEn-CK-ccx" id="9BW-Od-RQa"/>
+                <outlet property="btnViewAllReply" destination="fJx-i8-YQf" id="L6v-0b-sAv"/>
+                <outlet property="lblCommentTime" destination="hvB-HF-MG1" id="rRx-sZ-32F"/>
+                <outlet property="lblComments" destination="uEn-Hm-TDB" id="QcQ-zq-8s8"/>
+                <outlet property="lblName" destination="fvO-yp-MpX" id="fVZ-vg-B6U"/>
+                <outlet property="lblTotalLike" destination="jGf-qU-XFI" id="edv-Ig-Flx"/>
+                <outlet property="userImage" destination="Iv1-c3-eYh" id="vyB-y5-6O6"/>
+            </connections>
+            <point key="canvasLocation" x="81.159420289855078" y="117.52232142857142"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="Iv1-c3-eYh">
+            <size key="intrinsicContentSize" width="163.33333333333334" height="163"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="ic_heart_gray_out" width="42.5" height="42.5"/>
+        <image name="noUserImg" width="163.33332824707031" height="163"/>
+        <namedColor name="black">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="darkGrey">
+            <color red="0.54500001668930054" green="0.53799998760223389" blue="0.56199997663497925" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="lightgraycolor">
+            <color red="0.94900000095367432" green="0.94900000095367432" blue="0.94900000095367432" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

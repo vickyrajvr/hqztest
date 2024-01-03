@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VisitorLiveViewController" customModule="SmashVideos" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="visitorTableView" destination="gxG-UK-pd8" id="lxQ-BE-e37"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="gxG-UK-pd8">
+                    <rect key="frame" x="0.0" y="412" width="414" height="324"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="324" id="psr-6O-7E2"/>
+                    </constraints>
+                    <color key="separatorColor" systemColor="systemGray5Color"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zVE-mh-42w">
+                    <rect key="frame" x="0.0" y="370" width="414" height="45"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Go Live Together" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bXM-Ce-vfV">
+                            <rect key="frame" x="142" y="12.999999999999998" width="130.33333333333337" height="19.333333333333329"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8rX-y1-SjQ">
+                            <rect key="frame" x="0.0" y="40.666666666666686" width="414" height="1.3333333333333357"/>
+                            <color key="backgroundColor" systemColor="systemGray5Color"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1.5" id="sQy-or-nCq"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="bXM-Ce-vfV" firstAttribute="centerY" secondItem="zVE-mh-42w" secondAttribute="centerY" id="Jpa-sa-7yh"/>
+                        <constraint firstAttribute="height" constant="45" id="Ly2-wZ-LfV"/>
+                        <constraint firstItem="bXM-Ce-vfV" firstAttribute="centerX" secondItem="zVE-mh-42w" secondAttribute="centerX" id="TCS-7Z-Y7g"/>
+                        <constraint firstItem="8rX-y1-SjQ" firstAttribute="leading" secondItem="zVE-mh-42w" secondAttribute="leading" id="Wss-Pb-0jL"/>
+                        <constraint firstAttribute="bottom" secondItem="8rX-y1-SjQ" secondAttribute="bottom" constant="3" id="idN-NS-3CD"/>
+                        <constraint firstAttribute="trailing" secondItem="8rX-y1-SjQ" secondAttribute="trailing" id="tXp-wg-Ujh"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="zVE-mh-42w" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="2la-Cz-Bz8"/>
+                <constraint firstItem="gxG-UK-pd8" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="EPC-Ft-L5b"/>
+                <constraint firstItem="gxG-UK-pd8" firstAttribute="top" secondItem="zVE-mh-42w" secondAttribute="bottom" constant="-3" id="NLx-u9-ReP"/>
+                <constraint firstAttribute="bottom" secondItem="gxG-UK-pd8" secondAttribute="bottom" id="ReU-3f-sMj"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="zVE-mh-42w" secondAttribute="trailing" id="cm0-UF-aiJ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="gxG-UK-pd8" secondAttribute="trailing" id="yNC-2t-yH4"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="19.565217391304348"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="LiveCommentTableViewCell" id="KGk-i7-Jjw" customClass="LiveCommentTableViewCell" customModule="SmashVideos" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="YF9-GO-jqZ">
+                        <rect key="frame" x="63" y="9.6666666666666679" width="242" height="40.666666666666657"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="zubair ahmed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0kB-Rr-WvX">
+                                <rect key="frame" x="0.0" y="0.0" width="242" height="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <color key="textColor" name="white"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hello" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bxA-pK-nH7">
+                                <rect key="frame" x="0.0" y="25.000000000000004" width="242" height="15.666666666666668"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" name="white"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="bxA-pK-nH7" firstAttribute="leading" secondItem="YF9-GO-jqZ" secondAttribute="leading" id="Fit-rx-8Oc"/>
+                            <constraint firstItem="0kB-Rr-WvX" firstAttribute="leading" secondItem="YF9-GO-jqZ" secondAttribute="leading" id="f3c-nU-j0d"/>
+                            <constraint firstAttribute="trailing" secondItem="0kB-Rr-WvX" secondAttribute="trailing" id="hey-7A-iDx"/>
+                            <constraint firstAttribute="trailing" secondItem="bxA-pK-nH7" secondAttribute="trailing" id="iWM-iD-rfp"/>
+                        </constraints>
+                    </stackView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noUserImg" translatesAutoresizingMaskIntoConstraints="NO" id="00f-y4-Tlu" customClass="CustomImageView" customModule="SmashVideos" customModuleProvider="target">
+                        <rect key="frame" x="15" y="10" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="Vya-NS-peR"/>
+                            <constraint firstAttribute="width" constant="40" id="rsE-UP-c0x"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isCircle" value="NO"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornarRadius">
+                                <real key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="YF9-GO-jqZ" firstAttribute="leading" secondItem="00f-y4-Tlu" secondAttribute="trailing" constant="8" symbolic="YES" id="1u2-iS-D2u"/>
+                    <constraint firstItem="00f-y4-Tlu" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="CSH-1x-vOk"/>
+                    <constraint firstAttribute="trailing" secondItem="YF9-GO-jqZ" secondAttribute="trailing" constant="15" id="TzC-JL-4Dm"/>
+                    <constraint firstItem="00f-y4-Tlu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="idl-O0-NIr"/>
+                    <constraint firstItem="YF9-GO-jqZ" firstAttribute="centerY" secondItem="00f-y4-Tlu" secondAttribute="centerY" id="pgU-7s-Im6"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="comment" destination="bxA-pK-nH7" id="iAO-Oh-5oB"/>
+                <outlet property="userImg" destination="00f-y4-Tlu" id="cku-h3-164"/>
+                <outlet property="userName" destination="0kB-Rr-WvX" id="5qe-NZ-NI3"/>
+            </connections>
+            <point key="canvasLocation" x="123" y="21"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="00f-y4-Tlu">
+            <size key="intrinsicContentSize" width="163.33333333333334" height="163"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="noUserImg" width="163.33332824707031" height="163"/>
+        <namedColor name="white">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
